@@ -3,4 +3,5 @@ __pycache__/
 *$py.class
 
 # app cache
-cache
+cache/*
+!cache/.keep
