@@ -15,7 +15,7 @@ pip3 install -r requirements.txt
 # Launch
 
 ```sh
-python3 game.py USERNAME
+python3 pyexgame.py USERNAME
 ```
 
 -   where USERNAME is SteamID and GOG ID (if you want to use two different ID just hack the code in `pyexgame.py`)
