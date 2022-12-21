@@ -92,7 +92,7 @@ def get(id=None, params={}):
             last_played = datetime.fromtimestamp(
                 int(last_played)).replace(tzinfo=dateutil.tz.UTC)
 
-        playtime = int(float(box.get('hours_forever', 0))*60)  # minutes
+        playtime = int(float(box.get('hours_forever', "0").replace(",", ""))*60)  # minutes
 
         if playtime == 0 and ignoreZeroPlaytime:
             # print("rejected because 0 playtime: %s" % title)
